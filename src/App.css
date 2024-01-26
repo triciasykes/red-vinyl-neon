@@ -6,3 +6,84 @@
     transform: rotate(360deg);
   }
 }
+
+.neon {
+  font-weight: 400;
+  animation: pulsate 1.5s infinite alternate;
+  font-size: 7em;
+  letter-spacing: 1px;
+  color: #e93838;
+  text-shadow: 0 0 5px #fff 0 0 10px #fff 0 0 20px #fff 0 0 40px #fff 0 0 80px
+    #fff 0 0 90px #fff 0 0 100px #fff 0 0 150px #fff;
+  font-family: "Tilt Neon", sans-serif;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #e93838,
+    0 0 0.8rem #e93838, 0 0 2.8rem #e93838, inset 0 0 1.3rem #e93838;
+  animation: pulsate 1.5s infinite alternate;
+}
+
+.neon span {
+  animation: flicker 500ms linear;
+  animation-iteration-count: 10;
+}
+
+.neon .delay1 {
+  animation-delay: 0.8s;
+}
+.neon .delay2 {
+  animation-delay: 1.4s;
+}
+.neon .delay3 {
+  animation-delay: 1.8s;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #e93838,
+      0 0 80px #e93838, 0 0 90px #e93838, 0 0 100px #e93838, 0 0 150px #e93838;
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #e93838,
+      0 0 45px #e93838, 0 0 55px #e93838, 0 0 70px #e93838, 0 0 80px #e93838;
+  }
+}
+
+.section-name {
+  font-weight: 400;
+  animation: pulsate 1.5s infinite alternate;
+  font-size: 3em;
+  letter-spacing: 1px;
+  color: #e93838;
+  text-shadow: 0 0 5px #fff 0 0 10px #fff 0 0 20px #fff 0 0 40px #fff 0 0 80px
+    #fff 0 0 90px #fff 0 0 100px #fff 0 0 150px #fff;
+  font-family: "Tilt Neon", sans-serif;
+}

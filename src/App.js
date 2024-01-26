@@ -1,11 +1,11 @@
-import { Routes, Route } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
+import Contact from "./pages/Contact"
 import Header from "./components/Header"
 import Home from "./pages/Home"
-import SongList from "./pages/SongList"
-import Video from "./pages/Video"
 import Show from "./pages/Show"
-import Contact from "./pages/Contact"
-import NotFound from "./pages/NotFound"
+import SongList from "./pages/SongList"
+import VideoList from "./pages/VideoList"
+import videoData from "./videoData"
 
 import "./App.css"
 
@@ -16,10 +16,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/songs" element={<SongList />} />
-        <Route path="/video" element={<Video />} />
+        <Route path="/videos" element={<VideoList videoData={videoData} />} />
         <Route path="/shows" element={<Show />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   )

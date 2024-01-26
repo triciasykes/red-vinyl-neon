@@ -1,11 +1,15 @@
 import React from "react"
 
-import logo from "../assets/red-vinyl-45-logo-transparent.png"
-
 const Home = () => {
   return (
-    <main className="max-w-4xl mx-auto flex justify-center items-center mt-20">
-      <img src={logo} alt="Red Vinyl Logo" class="w-1/2 animate-slow-spin" />
+    <main
+      id="home"
+      className="max-w-4xl mx-auto flex justify-center items-center py-40 scroll-mt-40"
+    >
+      <div className="neon">
+        <span className="delay1">R</span>ED VIN
+        <span className="delay2">Y</span>L <span className="delay3">45</span>
+      </div>
     </main>
   )
 }
