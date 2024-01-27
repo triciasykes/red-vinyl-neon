@@ -11,7 +11,7 @@ const SongList = () => {
       <h2 className="text-4xl font-bold text-center sm-text-5xl mb-6 section-name">
         Song List
       </h2>
-      <div className="grid grid-col-2 grid-flow-col gap-4 flex-wrap">
+      <div className="grid grid-col-2 grid-flow-col gap-4">
         <div className="bg-red-500 text-white ps-8 py-7 rounded-md">
           {col1Songs.map((song, index) => {
             return <Song song={song} index={index} />
