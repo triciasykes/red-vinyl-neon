@@ -1,11 +1,22 @@
 import React from "react"
 
-import logo from "../assets/red-vinyl-45-logo-transparent.png"
-
 const Home = () => {
   return (
-    <main className="max-w-4xl mx-auto flex justify-center items-center mt-20">
-      <img src={logo} alt="Red Vinyl Logo" class="w-1/2 animate-slow-spin" />
+    <main
+      id="home"
+      className="max-w-4xl mx-auto flex justify-center flex-col items-center py-40 scroll-mt-40"
+    >
+      <div className="neon">
+        <span className="delay1">R</span>ED VIN
+        <span className="delay2">Y</span>L <span className="delay3">45</span>
+      </div>
+      <div className="pt-20">
+        <h2 className="text-2xl font-bold  text-center sm-text-5xl mb-6">
+          <a href="mailto:redvinyl45@gmail.com" className="mailto">
+            redvinyl45@gmail.com
+          </a>
+        </h2>
+      </div>
     </main>
   )
 }
