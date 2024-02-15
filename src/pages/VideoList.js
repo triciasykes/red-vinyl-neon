@@ -8,7 +8,7 @@ const VideoList = ({ videoData }) => {
       <h2 className="text-4xl font-bold text-center sm-text-5xl mb-6 section-name">
         Video
       </h2>
-      <div className="grid grid-cols-2  gap-4 justify-center">
+      <div className="flex flex-col-2 flex-wrap gap-8 justify-center items-center">
         {videoData.map((vid) => {
           return <Video vid={vid} />
         })}

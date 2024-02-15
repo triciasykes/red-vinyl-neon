@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import Contact from "./pages/Contact"
+
 import Header from "./components/Header"
+import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Show from "./pages/Show"
 import SongList from "./pages/SongList"
@@ -16,7 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/songs" element={<SongList />} />
-        <Route path="/videos" element={<VideoList videoData={videoData} />} />
+        <Route path="/video" element={<VideoList videoData={videoData} />} />
         <Route path="/shows" element={<Show />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -1,12 +1,3 @@
-@keyframes record-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .neon {
   font-weight: 400;
   animation: pulsate 1.5s infinite alternate;
@@ -85,5 +76,9 @@
   color: #e93838;
   text-shadow: 0 0 5px #fff 0 0 10px #fff 0 0 20px #fff 0 0 40px #fff 0 0 80px
     #fff 0 0 90px #fff 0 0 100px #fff 0 0 150px #fff;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+.band-name {
   font-family: "Tilt Neon", sans-serif;
 }
