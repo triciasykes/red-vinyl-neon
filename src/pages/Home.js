@@ -10,13 +10,6 @@ const Home = () => {
         <span className="delay1">R</span>ED VIN
         <span className="delay2">Y</span>L <span className="delay3">45</span>
       </div>
-      <div className="pt-20">
-        <h2 className="text-2xl font-bold  text-center sm-text-5xl mb-6">
-          <a href="mailto:redvinyl45@gmail.com" className="mailto">
-            redvinyl45@gmail.com
-          </a>
-        </h2>
-      </div>
     </main>
   )
 }
